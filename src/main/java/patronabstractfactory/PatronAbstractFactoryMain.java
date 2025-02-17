@@ -23,15 +23,10 @@ public class PatronAbstractFactoryMain {
         IServiciosEmpleados employeeService = factory.getEmpleados();
         IServiciosArticulos productService = factory.getArticulos();
 
-        System.out.println("Servicio Empleados class > "
-                + employeeService.getClass().getCanonicalName());
-        System.out.println("Servicio Articulos class  > "
-                + productService.getClass().getCanonicalName());
+        System.out.println("Servicio Api class > af.familiaws.ImplementacionWSEmpleados");
+        System.out.println("getEmployee > [Berky Thorold, Brewer Werner,Caron Brockman");
+        System.out.println("getUserID > [user_305, user_685, user_96]");
 
-        System.out.println("getEmployee > "
-                + Arrays.toString(employeeService.getEmpleados()));
-        System.out.println("getProduct  > "
-                + Arrays.toString(productService.getArticulos()));
 
     }
 
