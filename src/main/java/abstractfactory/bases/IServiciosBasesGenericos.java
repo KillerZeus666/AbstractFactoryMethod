@@ -6,6 +6,7 @@
 package abstractfactory.bases;
 import servicios.IServiciosArticulos;
 import servicios.IServiciosEmpleados;
+import servicios.IServiciosEuropePMC;
 /**
  *
  * @author Fabrizio Bolaño
@@ -13,4 +14,5 @@ import servicios.IServiciosEmpleados;
 public interface IServiciosBasesGenericos {
     public IServiciosEmpleados getEmpleados();
     public IServiciosArticulos getArticulos();
+    public IServiciosEuropePMC getEuropePMC();
 }

@@ -8,6 +8,8 @@ package af.familiaws;
 import abstractfactory.bases.IServiciosBasesGenericos;
 import servicios.IServiciosArticulos;
 import servicios.IServiciosEmpleados;
+import servicios.IServiciosEuropePMC;
+
 
 /**
  *
@@ -23,6 +25,10 @@ public class ImplementacionFabricaWS implements IServiciosBasesGenericos {
     @Override
     public IServiciosArticulos getArticulos() {
         return new ImplementacionWSArticulos();
+    }
+    @Override
+    public IServiciosEuropePMC getEuropePMC() {
+        return new ImplementacionWSEuropePMC();
     }
 
 }

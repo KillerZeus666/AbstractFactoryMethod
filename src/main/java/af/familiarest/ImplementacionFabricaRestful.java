@@ -8,6 +8,8 @@ package af.familiarest;
 import abstractfactory.bases.IServiciosBasesGenericos;
 import servicios.IServiciosArticulos;
 import servicios.IServiciosEmpleados;
+import servicios.IServiciosEuropePMC;
+
 
 /**
  *
@@ -23,6 +25,10 @@ public class ImplementacionFabricaRestful implements IServiciosBasesGenericos {
     @Override
     public IServiciosArticulos getArticulos() {
         return new ImplementacionRestArticulos();
+    }
+    @Override
+    public IServiciosEuropePMC getEuropePMC() {
+        return new ImplementacionRestfulEuropePMC();
     }
 
 }
